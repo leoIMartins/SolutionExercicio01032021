@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ListaDeExercicios.Exercicio6</StartupObject>
+    <StartupObject>ListaDeExercicios.Exercicio14</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,12 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercicio10.cs" />
+    <Compile Include="Exercicio11.cs" />
+    <Compile Include="Exercicio12.cs" />
+    <Compile Include="Exercicio13.cs" />
+    <Compile Include="Exercicio14.cs" />
     <Compile Include="Exercicio2.cs" />
     <Compile Include="Exercicio1.cs" />
     <Compile Include="Exercicio3.cs" />
     <Compile Include="Exercicio4.cs" />
     <Compile Include="Exercicio5.cs" />
     <Compile Include="Exercicio6.cs" />
+    <Compile Include="Exercicio7.cs" />
+    <Compile Include="Exercicio8.cs" />
+    <Compile Include="Exercicio9.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
