@@ -11,22 +11,27 @@ namespace ListaDeExerciciosOO
     {
         static void Main(string[] args)
         {
-            Urna urna = new Urna()
-            {
-                eleitores = 100,
-                votosBrancos = 10,
-                votosNulos = 5,
-                votosValidos = 85
-            };
+            Urna urna = new Urna();
 
-            if (urna.ValidarVotos(urna.eleitores, urna.votosBrancos, urna.votosNulos, urna.votosValidos))
+            Console.Write("Informe a quantidade de eleitores no municipio: ");
+            urna.eleitores = double.Parse(Console.ReadLine());
+
+            Console.Write("Informe a quantidade de votos brancos: ");
+            urna.votosBrancos = double.Parse(Console.ReadLine());
+
+            Console.Write("Informe a quantidade de votos nulos: ");
+            urna.votosNulos = double.Parse(Console.ReadLine());
+
+            do
             {
-                Console.WriteLine("\nPorcentagem de votos brancos: " + ((urna.votosBrancos / urna.eleitores) * 100) + "%");
-                Console.WriteLine("Porcentagem de votos nulos: " + ((urna.votosNulos / urna.eleitores) * 100) + "%");
-                Console.WriteLine("Porcentagem de votos validos: " + ((urna.votosValidos / urna.eleitores) * 100) + "%");
-            }
-            else
-                Console.WriteLine("\nA soma de todos os votos deve ser igual ao número de eleitores!");
+                Console.Write("Informe a quantidade de votos validos: ");
+                urna.votosValidos = int.Parse(Console.ReadLine());
+
+                if (urna.ValidarVotos())
+                    urna.CalcularPercentuais();
+                else
+                    Console.WriteLine("\nA soma de todos os votos deve ser igual ao número de eleitores!");
+            } while (urna.ValidarVotos() == false);
 
             Console.ReadKey();
         }

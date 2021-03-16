@@ -16,7 +16,7 @@ namespace Model2
 
         #region Métodos
 
-        public int CalcularDiasVida(int anos, int meses, int dias)
+        public int CalcularDiasVida()
         {
             return (anos * 365) + (meses * 30) + dias; ;
         }

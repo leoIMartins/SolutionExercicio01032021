@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ListaDeExerciciosOO.Exercicio2</StartupObject>
+    <StartupObject>ListaDeExerciciosOO.Exercicio3</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercicio3.cs" />
     <Compile Include="Exercicio1.cs" />
     <Compile Include="Exercicio2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
