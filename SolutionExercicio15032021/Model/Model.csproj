@@ -42,6 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exercicio10\Estatisticas.cs" />
+    <Compile Include="Exercicio11\Dados.cs" />
+    <Compile Include="Exercicio12\Leitor.cs" />
+    <Compile Include="Exercicio13\Impressora.cs" />
+    <Compile Include="Exercicio14\Calculos.cs" />
     <Compile Include="Exercicio1\Pessoa.cs" />
     <Compile Include="Exercicio2\Urna.cs" />
     <Compile Include="Exercicio3\Fabrica.cs" />

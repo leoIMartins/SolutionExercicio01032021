@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ListaDeExerciciosOO.Exercicio10</StartupObject>
+    <StartupObject>ListaDeExerciciosOO.Exercicio14</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exercicio10.cs" />
+    <Compile Include="Exercicio11.cs" />
+    <Compile Include="Exercicio12.cs" />
+    <Compile Include="Exercicio13.cs" />
+    <Compile Include="Exercicio14.cs" />
     <Compile Include="Exercicio4.cs" />
     <Compile Include="Exercicio3.cs" />
     <Compile Include="Exercicio1.cs" />
