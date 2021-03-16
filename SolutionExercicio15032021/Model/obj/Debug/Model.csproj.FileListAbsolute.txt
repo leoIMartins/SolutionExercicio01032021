@@ -1,0 +1,2 @@
+C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
