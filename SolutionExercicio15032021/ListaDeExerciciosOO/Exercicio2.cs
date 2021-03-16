@@ -1,4 +1,4 @@
-﻿using Model2.Exercicio2;
+﻿using Model.Exercicio2;
 using System;
 using System.Collections.Generic;
 using System.Linq;

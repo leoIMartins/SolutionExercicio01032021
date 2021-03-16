@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ListaDeExerciciosOO.Exercicio3</StartupObject>
+    <StartupObject>ListaDeExerciciosOO.Exercicio10</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,16 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercicio10.cs" />
+    <Compile Include="Exercicio4.cs" />
     <Compile Include="Exercicio3.cs" />
     <Compile Include="Exercicio1.cs" />
     <Compile Include="Exercicio2.cs" />
+    <Compile Include="Exercicio5.cs" />
+    <Compile Include="Exercicio6.cs" />
+    <Compile Include="Exercicio7.cs" />
+    <Compile Include="Exercicio8.cs" />
+    <Compile Include="Exercicio9.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Model2\Model.csproj">
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
       <Project>{fff79e6f-7470-450a-b738-6e86b41c1808}</Project>
       <Name>Model</Name>
     </ProjectReference>

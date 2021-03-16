@@ -1,2 +1,12 @@
+C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model2\bin\Debug\Model2.dll
+C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model2\bin\Debug\Model2.pdb
+C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model2\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model2\obj\Debug\Model2.dll
+C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model2\obj\Debug\Model2.pdb
+C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model2\obj\Debug\Model.csprojAssemblyReference.cache
+C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model\bin\Debug\Model.dll
+C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model\bin\Debug\Model.pdb
 C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model\obj\Debug\Model.csprojAssemblyReference.cache
 C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model\obj\Debug\Model.dll
+C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model\obj\Debug\Model.pdb

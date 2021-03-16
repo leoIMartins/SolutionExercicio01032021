@@ -1,6 +1,0 @@
-C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model2\bin\Debug\Model2.dll
-C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model2\bin\Debug\Model2.pdb
-C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model2\obj\Debug\Model.csproj.CoreCompileInputs.cache
-C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model2\obj\Debug\Model2.dll
-C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model2\obj\Debug\Model2.pdb
-C:\TopicosAvancadosEmSistemasDeInformacao\SolutionExercicio15032021\Model2\obj\Debug\Model.csprojAssemblyReference.cache
