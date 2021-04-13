@@ -17,6 +17,10 @@ namespace Model
 
         public const string INSERT = "INSERT INTO TB_FERRAMENTAA (descricao, tipo, marca, preco) VALUES ('{0}', '{1}', '{2}', '{3}')";
         public const string GETALL = "SELECT id, descricao, tipo, marca, preco FROM TB_FERRAMENTAA";
+        public const string UPDATE = "UPDATE TB_FERRAMENTAA SET descricao = '{0}', tipo = '{1}', marca = '{2}', preco = '{3}' WHERE id = {4}";
+        public const string DELETE = "DELETE FROM TB_FERRAMENTAA WHERE id = {0}";
+        public const string GETBYID = "SELECT id, descricao, tipo, marca, preco FROM TB_FERRAMENTAA WHERE id = {0}";
+
 
         public override string ToString()
         {

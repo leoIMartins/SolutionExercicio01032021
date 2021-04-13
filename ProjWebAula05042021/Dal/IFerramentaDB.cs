@@ -10,7 +10,7 @@ namespace Dal
     public interface IFerramentaDB
     {
         bool Insert(Ferramenta ferramenta);
-        bool Update(Ferramenta ferramenta);
+        bool Update(Ferramenta ferramenta, int id);
         bool Delete(int id);
         Ferramenta SelectById(int id);
         List<Ferramenta> GetAll();

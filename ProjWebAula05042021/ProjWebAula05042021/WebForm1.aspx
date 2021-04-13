@@ -24,6 +24,16 @@
         .auto-style5 {
             height: 22px;
         }
+        .auto-style6 {
+            margin-left: 0px;
+        }
+        .auto-style7 {
+            width: 107px;
+            height: 26px;
+        }
+        .auto-style8 {
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -32,7 +42,9 @@
         <br />
         <table style="width:100%;">
             <tr>
-                <td class="auto-style4"></td>
+                <td class="auto-style4">
+                    <asp:HiddenField ID="IdH" runat="server" />
+                </td>
                 <td class="auto-style5"></td>
             </tr>
             <tr>
@@ -54,8 +66,8 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Preço</td>
-                <td>
+                <td class="auto-style7">Preço</td>
+                <td class="auto-style8">
                     <asp:TextBox ID="TxtPreco" runat="server"></asp:TextBox>
                 </td>
             </tr>
@@ -69,6 +81,8 @@
                 <td class="auto-style2">&nbsp;</td>
                 <td>
                     <asp:Button ID="BtnSalvar" runat="server" OnClick="BtnSalvar_Click" Text="Salvar" />
+                &nbsp;&nbsp;
+                    <asp:Button ID="btnNovo" runat="server" OnClick="btnNovo_Click" Text="Novo" />
                 </td>
             </tr>
             <tr>
@@ -79,8 +93,17 @@
             <tr>
                 <td class="auto-style2">&nbsp;</td>
                 <td>
-                    <asp:GridView ID="GVFerramenta" runat="server" CellPadding="3" ForeColor="Black" GridLines="Vertical" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px">
+                    <asp:GridView ID="GVFerramenta" runat="server" CellPadding="3" ForeColor="Black" GridLines="Vertical" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" AutoGenerateColumns="False" CssClass="auto-style6" OnRowCommand="GVFerramenta_RowCommand" OnSelectedIndexChanged="GVFerramenta_SelectedIndexChanged">
                         <AlternatingRowStyle BackColor="#CCCCCC" />
+                        <Columns>
+                            <asp:BoundField DataField="id" HeaderText="Id" />
+                            <asp:BoundField DataField="descricao" HeaderText="Descricao" />
+                            <asp:BoundField DataField="tipo" HeaderText="Tipo" />
+                            <asp:BoundField DataField="marca" HeaderText="Marca" />
+                            <asp:BoundField DataField="preco" HeaderText="Preco" />
+                            <asp:ButtonField ButtonType="Button" CommandName="Editar" Text="Alterar" />
+                            <asp:ButtonField ButtonType="Button" CommandName="Excluir" ShowHeader="True" Text="Excluir" />
+                        </Columns>
                         <FooterStyle BackColor="#CCCCCC" />
                         <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
                         <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />

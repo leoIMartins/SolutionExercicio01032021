@@ -45,7 +45,6 @@ namespace Dal
         public bool Insert(Ferramenta ferramenta)
         {
             bool status = false;
-            //string sql = string.Format(Ferramenta.INSERT, ferramenta.Id, ferramenta.Descricao, ferramenta.Tipo, ferramenta.Marca, ferramenta.Preco);
             string sql = string.Format(Ferramenta.INSERT, ferramenta.Descricao, ferramenta.Tipo, ferramenta.Marca, ferramenta.Preco);
 
             using (var connection = new DB())
@@ -57,17 +56,38 @@ namespace Dal
 
         public Ferramenta SelectById(int id)
         {
-            throw new NotImplementedException();
+            string sql = string.Format(Ferramenta.GETBYID, id);
+            Ferramenta employee;
+
+            using (var connection = new DB())
+            {
+                employee = TransformSQLReaderToList(connection.ExecQueryReturn(sql))[0];
+            }
+            return employee;
         }
 
-        public bool Update(Ferramenta ferramenta)
+        public bool Update(Ferramenta ferramenta, int id)
         {
-            throw new NotImplementedException();
+            bool status = false;
+            string sql = string.Format(Ferramenta.UPDATE, ferramenta.Descricao, ferramenta.Tipo, ferramenta.Marca, ferramenta.Preco, id);
+
+            using (var connection = new DB())
+            {
+                status = connection.ExecQuery(sql);
+            }
+            return status;
         }
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            bool status = false;
+            string sql = string.Format(Ferramenta.DELETE, id);
+
+            using (var connection = new DB())
+            {
+                status = connection.ExecQuery(sql);
+            }
+            return status;
         }
     }
 }

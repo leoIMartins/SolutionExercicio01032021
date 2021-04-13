@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Espotifai", "Espotifai\Espotifai.csproj", "{50CC1F74-A176-4F59-A43C-0ED767265EA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50CC1F74-A176-4F59-A43C-0ED767265EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50CC1F74-A176-4F59-A43C-0ED767265EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50CC1F74-A176-4F59-A43C-0ED767265EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50CC1F74-A176-4F59-A43C-0ED767265EA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80AD04E0-9B17-428B-B7FF-E7129F5A3F82}
+	EndGlobalSection
+EndGlobal
