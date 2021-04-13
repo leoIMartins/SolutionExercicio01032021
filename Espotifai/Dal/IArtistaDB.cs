@@ -10,7 +10,7 @@ namespace Dal
     public interface IArtistaDB
     {
         bool Insert(Artista artista);
-        bool Update(Artista artista);
+        bool Update(Artista artista, int id);
         bool Delete(int id);
         Artista SelectById(int id);
         List<Artista> GetAll();

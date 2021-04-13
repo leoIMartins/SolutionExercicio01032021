@@ -57,3 +57,7 @@ C:\TopicosAvancadosEmSistemasDeInformacao\Espotifai\Espotifai\obj\Debug\Espotifa
 C:\TopicosAvancadosEmSistemasDeInformacao\Espotifai\Espotifai\obj\Debug\Espotifai.csproj.CopyComplete
 C:\TopicosAvancadosEmSistemasDeInformacao\Espotifai\Espotifai\obj\Debug\Espotifai.dll
 C:\TopicosAvancadosEmSistemasDeInformacao\Espotifai\Espotifai\obj\Debug\Espotifai.pdb
+C:\TopicosAvancadosEmSistemasDeInformacao\Espotifai\Espotifai\bin\Dal.dll
+C:\TopicosAvancadosEmSistemasDeInformacao\Espotifai\Espotifai\bin\Model.dll
+C:\TopicosAvancadosEmSistemasDeInformacao\Espotifai\Espotifai\bin\Dal.pdb
+C:\TopicosAvancadosEmSistemasDeInformacao\Espotifai\Espotifai\bin\Model.pdb

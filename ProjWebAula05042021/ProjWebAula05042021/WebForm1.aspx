@@ -11,14 +11,14 @@
             height: 25px;
         }
         .auto-style2 {
-            width: 107px;
+            width: 73px;
         }
         .auto-style3 {
             height: 25px;
-            width: 107px;
+            width: 73px;
         }
         .auto-style4 {
-            width: 107px;
+            width: 73px;
             height: 22px;
         }
         .auto-style5 {
@@ -28,7 +28,7 @@
             margin-left: 0px;
         }
         .auto-style7 {
-            width: 107px;
+            width: 73px;
             height: 26px;
         }
         .auto-style8 {

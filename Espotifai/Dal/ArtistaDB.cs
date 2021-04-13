@@ -32,6 +32,7 @@ namespace Dal
                 var item = new Artista()
                 {
                     Id = int.Parse(returnData["id"].ToString()),
+                    Nome = returnData["nome"].ToString(),
                     Integrantes = returnData["integrantes"].ToString(),
                 };
                 lst.Add(item);
@@ -39,10 +40,10 @@ namespace Dal
             return lst;
         }
 
-        public bool Insert(Artista ferramenta)
+        public bool Insert(Artista artista)
         {
             bool status = false;
-            string sql = string.Format(Artista.INSERT, ferramenta.Integrantes);
+            string sql = string.Format(Artista.INSERT, artista.Nome, artista.Integrantes);
 
             using (var connection = new DB())
             {
@@ -53,13 +54,20 @@ namespace Dal
 
         public Artista SelectById(int id)
         {
-            throw new NotImplementedException();
+            string sql = string.Format(Artista.GETBYID, id);
+            Artista artista;
+
+            using (var connection = new DB())
+            {
+                artista = TransformSQLReaderToList(connection.ExecQueryReturn(sql))[0];
+            }
+            return artista;
         }
 
-        public bool Update(Artista ferramenta)
+        public bool Update(Artista artista, int id)
         {
             bool status = false;
-            string sql = string.Format(Artista.UPDATE, ferramenta.Integrantes, ferramenta.Id);
+            string sql = string.Format(Artista.UPDATE, artista.Nome, artista.Integrantes, id);
 
             using (var connection = new DB())
             {
