@@ -43,8 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB.cs" />
-    <Compile Include="FerramentaDB.cs" />
-    <Compile Include="IFerramentaDB.cs" />
+    <Compile Include="ArtistaDB.cs" />
+    <Compile Include="IArtistaDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

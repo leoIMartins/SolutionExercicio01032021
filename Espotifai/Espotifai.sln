@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Espotifai", "Espotifai\Espotifai.csproj", "{50CC1F74-A176-4F59-A43C-0ED767265EA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dal", "Dal\Dal.csproj", "{21CC2A45-4E29-419B-A58E-A03B0329D399}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{BBA8F662-3BCA-4C17-A85D-AAC6F8E1EEEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{50CC1F74-A176-4F59-A43C-0ED767265EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50CC1F74-A176-4F59-A43C-0ED767265EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50CC1F74-A176-4F59-A43C-0ED767265EA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21CC2A45-4E29-419B-A58E-A03B0329D399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21CC2A45-4E29-419B-A58E-A03B0329D399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21CC2A45-4E29-419B-A58E-A03B0329D399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21CC2A45-4E29-419B-A58E-A03B0329D399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBA8F662-3BCA-4C17-A85D-AAC6F8E1EEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBA8F662-3BCA-4C17-A85D-AAC6F8E1EEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBA8F662-3BCA-4C17-A85D-AAC6F8E1EEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBA8F662-3BCA-4C17-A85D-AAC6F8E1EEEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
