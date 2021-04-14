@@ -9,12 +9,12 @@ using System.Web.UI.WebControls;
 
 namespace Espotifai
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class WebForm3 : System.Web.UI.Page
     {
         private void LoadGrid()
         {
-            GVAlbum.DataSource = new AlbumDB().GetAll();
-            GVAlbum.DataBind();
+            GVMusica.DataSource = new MusicaDB().GetAll();
+            GVMusica.DataBind();
         }
 
         protected void Page_Load(object sender, EventArgs e)
@@ -24,12 +24,12 @@ namespace Espotifai
 
         protected void BtnSalvar_Click(object sender, EventArgs e)
         {
-            Album album = getData();
-            var db = new AlbumDB();
+            Musica musica = getData();
+            var db = new MusicaDB();
 
             if ((IdH.Value == "0") || (IdH.Value == ""))
             {
-                if (db.Insert(album))
+                if (db.Insert(musica))
                 {
                     LblMsg.Text = "Registro inserido!";
                     LoadGrid();
@@ -39,7 +39,7 @@ namespace Espotifai
             }
             else
             {
-                if (db.Update(album, int.Parse(IdH.Value)))
+                if (db.Update(musica, int.Parse(IdH.Value)))
                 {
                     LblMsg.Text = "Registro atualizado!";
                 }
@@ -52,32 +52,22 @@ namespace Espotifai
 
         protected void btnNovo_Click(object sender, EventArgs e)
         {
-            TxtNomeAlbum.Text = "";
-            TxtLancamento.Text = "";
-            TxtGravadora.Text = "";
+            TxtNomeMusica.Text = "";
+            TxtDuracao.Text = "";
+            TxtCompositor.Text = "";
+            TxtGenero.Text = "";
             IdH.Value = "0";
-            TxtNomeAlbum.Focus();
+            TxtNomeMusica.Focus();
         }
 
-        protected void BtnMusica_Click(object sender, EventArgs e)
-        {
-            if (GVAlbum.Rows.Count == 0)
-            {
-                LblAlerta.Enabled = true;
-                LblAlerta.Visible = true;
-            }
-            else
-                Response.Redirect("WebForm3.aspx");
-        }
-
-        protected void GVAlbum_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void GVMusica_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             int index = Convert.ToInt32(e.CommandArgument);
-            GridViewRow row = GVAlbum.Rows[index];
+            GridViewRow row = GVMusica.Rows[index];
 
             int id = Convert.ToInt32(row.Cells[0].Text);
 
-            var db = new AlbumDB();
+            var db = new MusicaDB();
 
             if (e.CommandName == "Excluir")
             {
@@ -87,24 +77,26 @@ namespace Espotifai
             }
             else if (e.CommandName == "Editar")
             {
-                Album album = db.SelectById(id);
+                Musica musica = db.SelectById(id);
 
-                TxtNomeAlbum.Text = album.Nome;
-                TxtLancamento.Text = album.Lancamento;
-                TxtGravadora.Text = album.Gravadora;
-                DdlArtista.Text = album.Artista;
-                IdH.Value = album.Id.ToString();
+                TxtNomeMusica.Text = musica.Nome;
+                TxtDuracao.Text = musica.Duracao;
+                TxtCompositor.Text = musica.Compositor;
+                TxtGenero.Text = musica.Genero;
+                DdlAlbum.Text = musica.Album;
+                IdH.Value = musica.Id.ToString();
             }
         }
 
-        private Album getData()
+        private Musica getData()
         {
-            return new Album()
+            return new Musica()
             {
-                Nome = TxtNomeAlbum.Text,
-                Lancamento = TxtLancamento.Text,
-                Gravadora = TxtGravadora.Text,
-                Artista = DdlArtista.Text,
+                Nome = TxtNomeMusica.Text,
+                Duracao = TxtDuracao.Text,
+                Compositor = TxtCompositor.Text,
+                Genero = TxtGenero.Text,
+                Album = DdlAlbum.Text,
             };
         }
     }
