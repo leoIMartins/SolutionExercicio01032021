@@ -104,6 +104,13 @@ namespace Espotifai
                 LblAlerta.Enabled = true;
                 LblAlerta.Visible = true;
             }
+            else
+                Response.Redirect("WebForm2.aspx");
+        }
+
+        protected void GVArtista_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+
         }
     }
 }

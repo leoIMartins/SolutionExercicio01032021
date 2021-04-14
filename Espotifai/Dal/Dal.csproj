@@ -42,9 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Album\AlbumDB.cs" />
+    <Compile Include="Album\IAlbumDB.cs" />
     <Compile Include="DB.cs" />
-    <Compile Include="ArtistaDB.cs" />
-    <Compile Include="IArtistaDB.cs" />
+    <Compile Include="Artista\ArtistaDB.cs" />
+    <Compile Include="Artista\IArtistaDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
