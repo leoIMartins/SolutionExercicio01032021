@@ -7,12 +7,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
 </head>
-<body>
+<body style="background-color:grey">
     <form id="form1" runat="server">
         <table style="width:auto">
             <tr>
                 <td class="auto-style4">
-                    ******Música******
+                    <h1>Música</h1>
                 </td>
                 <td class="auto-style1">
                     <asp:HiddenField ID="IdH" runat="server" />

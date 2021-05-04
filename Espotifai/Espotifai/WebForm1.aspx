@@ -26,12 +26,12 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color:grey">
     <form id="form1" runat="server">
         <table style="width:auto">
             <tr>
                 <td class="auto-style4">
-                    ******Artista******
+                    <h1>Artista</h1>
                 </td>
                 <td class="auto-style1">
                     <asp:HiddenField ID="IdH" runat="server" />
