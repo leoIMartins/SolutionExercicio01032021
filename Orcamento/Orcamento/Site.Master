@@ -52,8 +52,10 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Página inicial</a></li>
-                        <li><a runat="server" href="~/About">Sobre</a></li>
-                        <li><a runat="server" href="~/Contact">Contato</a></li>
+                        <li><a runat="server" href="~/Ambiente">Ambiente</a></li>
+                        <li><a runat="server" href="~/Squad">Squad</a></li>
+                        <li><a runat="server" href="~/Modulo">Módulo</a></li>
+                        <li><a runat="server" href="~/Orcamento">Orçamento</a></li>
                     </ul>
                 </div>
             </div>

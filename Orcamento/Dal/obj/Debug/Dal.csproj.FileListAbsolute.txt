@@ -34,3 +34,12 @@ C:\TopicosAvancadosEmSistemasDeInformacao\Espotifai\Dal\bin\Debug\Dal.pdb
 C:\TopicosAvancadosEmSistemasDeInformacao\Espotifai\Dal\bin\Debug\Model.dll
 C:\TopicosAvancadosEmSistemasDeInformacao\Espotifai\Dal\bin\Debug\Model.pdb
 C:\TopicosAvancadosEmSistemasDeInformacao\Espotifai\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Dal\bin\Debug\Dal.dll
+C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Dal\bin\Debug\Dal.pdb
+C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Dal\bin\Debug\Model.dll
+C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Dal\bin\Debug\Model.pdb
+C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Dal\obj\Debug\Dal.csprojAssemblyReference.cache
+C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Dal\obj\Debug\Dal.csproj.CoreCompileInputs.cache
+C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Dal\obj\Debug\Dal.csproj.CopyComplete
+C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Dal\obj\Debug\Dal.dll
+C:\TopicosAvancadosEmSistemasDeInformacao\Orcamento\Dal\obj\Debug\Dal.pdb
