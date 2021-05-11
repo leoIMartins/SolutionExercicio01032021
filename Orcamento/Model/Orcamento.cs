@@ -17,11 +17,11 @@ namespace Model
         public string Titulo { get; set; }
         public string Modulo { get; set; }
 
-        public const string INSERT = "INSERT INTO TB_SQUAD (dtinicio, dtfim, qtddias, descricao, titulo, modulo) VALUES ('{0}', '{1}', {2}, '{3}', '{4}', '{5}')";
-        public const string GETALL = "SELECT id, dtinicio, dtfim, qtddias, descricao, titulo, modulo FROM TB_SQUAD";
-        public const string UPDATE = "UPDATE TB_SQUAD SET dtinicio = '{0}', dtfim = '{1}', qtddias = {2}, descricao = '{3}', titulo = '{4}', modulo = '{5}' WHERE id = {6}";
-        public const string DELETE = "DELETE FROM TB_SQUAD WHERE id = {0}";
-        public const string GETBYID = "SELECT id, dtinicio, dtfim, qtddias, descricao, titulo, modulo FROM TB_SQUAD WHERE id = {0}";
+        public const string INSERT = "INSERT INTO TB_ORCAMENTO (dtinicio, dtfim, qtddias, descricao, titulo, modulo) VALUES ('{0}', '{1}', {2}, '{3}', '{4}', '{5}')";
+        public const string GETALL = "SELECT id, dtinicio, dtfim, qtddias, descricao, titulo, modulo FROM TB_ORCAMENTO";
+        public const string UPDATE = "UPDATE TB_ORCAMENTO SET dtinicio = '{0}', dtfim = '{1}', qtddias = {2}, descricao = '{3}', titulo = '{4}', modulo = '{5}' WHERE id = {6}";
+        public const string DELETE = "DELETE FROM TB_ORCAMENTO WHERE id = {0}";
+        public const string GETBYID = "SELECT id, dtinicio, dtfim, qtddias, descricao, titulo, modulo FROM TB_ORCAMENTO WHERE id = {0}";
 
         #endregion
     }

@@ -3,38 +3,39 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <h1>Orçamento</h1>
+        <p class="lead">Cadastre o orçamento do seu projeto neste sistema top que acabou de ser desenvolvido!!!
+            Mas antes, confira à baixo os pré-requisitos
+        </p>
+        <p><a href="https://localhost:44335/Orcamento" class="btn btn-primary btn-lg">Cadastrar Orçamento &raquo;</a></p>
     </div>
 
     <div class="row">
         <div class="col-md-4">
-            <h2>Getting started</h2>
+            <h2>Ambiente</h2>
             <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
+                Antes de tudo, é necessário cadastrar um ambiente. Clique no botão à baixo e vá para a página de cadastro.
             </p>
             <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
+                <a class="btn btn-default" href="https://localhost:44335/Ambiente">Cadastrar Ambiente &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
-            <h2>Web Hosting</h2>
+            <h2>Squad</h2>
             <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
+                Outro pré-requisito é o cadastro de uma squad. Clique no botão à baixo e vá para a página de cadastro.
             </p>
             <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
+                <a class="btn btn-default" href="https://localhost:44335/Squad">Cadastrar Squad &raquo;</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2>Módulo</h2>
+            <p>
+                Após o cadastro de um ambiente e uma squad, você já pode cadastrar um módulo. Clique no botão à baixo e vá para a página de cadastro.
+            </p>
+            <p>
+                <a class="btn btn-default" href="https://localhost:44335/Modulo">Cadastrar Módulo &raquo;</a>
             </p>
         </div>
     </div>

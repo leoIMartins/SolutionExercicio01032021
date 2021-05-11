@@ -88,16 +88,5 @@ namespace Orcamento
             IdH.Value = "0";
             DdlAmbiente.Focus();
         }
-
-        /*protected void BtnAlbum_Click(object sender, EventArgs e)
-        {
-            if (GVModulo.Rows.Count == 0)
-            {
-                LblAlerta.Enabled = true;
-                LblAlerta.Visible = true;
-            }
-            else
-                Response.Redirect("WebForm2.aspx");
-        }*/
     }
 }
