@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/principal.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ControleViagens.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/principal.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ControleViagens.Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <script type="text/javascript"> function MostrarPopupMensagem() { $("#modalMsg").modal('show'); }
         function EsconderPopupDados() { $("#modalDados").modal('hide'); } </script>
     <!-- /.modal -->
@@ -27,7 +27,7 @@
         <!-- /.modal-dialog -->
     </div>
     <form runat="server">
-        <asp:GridView ID="GVViagem" runat="server" CellPadding="4" CssClass="table" ForeColor="#333333" GridLines="None" AutoGenerateColumns="False" OnRowCommand="GVViagem_RowCommand" OnSelectedIndexChanged="GVViagem_SelectedIndexChanged">
+        <asp:GridView ID="GVViagem" runat="server" CellPadding="4" CssClass="table" ForeColor="#333333" GridLines="None" AutoGenerateColumns="False" OnRowCommand="GVViagem_RowCommand">
             <AlternatingRowStyle BackColor="White" />
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

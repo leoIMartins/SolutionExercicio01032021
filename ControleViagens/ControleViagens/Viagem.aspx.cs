@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace ControleViagens
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class Viagem : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
                 CarregarDadosPagina();
             }
@@ -26,7 +26,8 @@ namespace ControleViagens
 
             string valor = Request.QueryString["idItem"];
 
-            if (String.IsNullOrEmpty(valor)) {
+            if (String.IsNullOrEmpty(valor))
+            {
                 contextViagem.TB_VIAGEM.Add(v);
                 lblmsg.Text = "Registro Inserido!";
                 Clear();
@@ -38,31 +39,32 @@ namespace ControleViagens
                 viagem.descricao = v.descricao;
                 viagem.data = v.data;
                 lblmsg.Text = "Registro Alterado";
-                contextViagem.SaveChanges();
             }
+            contextViagem.SaveChanges();
+        }
 
-            private void Clear()
-            {
-                txtdata.Text = "";
-                txtDescricao.Text = "";
-                txtDescricao.Focus();
-            }
+        private void Clear()
+        {
+            txtdata.Text = "";
+            txtDescricao.Text = "";
+            txtDescricao.Focus();
+        }
 
-            private void CarregarDadosPagina()
+        private void CarregarDadosPagina()
+        {
+            string valor = Request.QueryString["idItem"];
+            int idItem = 0;
+            TB_VIAGEM viagem = new TB_VIAGEM();
+            
+
+            if (!String.IsNullOrEmpty(valor))
             {
-                string valor = Request.QueryString["idItem"];
-                int idItem = 0;
-                TB_VIAGEM viagem = new TB_VIAGEM();
                 ViagemDBEntities contextViagem = new ViagemDBEntities();
+                idItem = Convert.ToInt32(valor);
+                viagem = contextViagem.TB_VIAGEM.First(c => c.id == idItem);
 
-                if(!String.IsNullOrEmpty(valor))
-                {
-                    idItem = Convert.ToInt32(valor);
-                    viagem = contextViagem.TB_VIAGEM.First(contextViagem => contextViagem.id == idItem);
-
-                    txtDescricao.Text = viagem.descricao;
-                    txtdata.Text = viagem.data.ToString();
-                }
+                txtDescricao.Text = viagem.descricao;
+                txtdata.Text = viagem.data.ToString();
             }
         }
     }
