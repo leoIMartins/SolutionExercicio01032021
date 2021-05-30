@@ -23,14 +23,14 @@ namespace VendaCamisetas
             float preco = (float)Convert.ToDouble(txtPreco.Text);
             string cor = txtCor.Text;
             string tamanho = txtTamanho.Text;
-            TB_CAMISAS camisetas = new TB_CAMISAS() { descricao = descricaoCamisetas, preco = preco, cor = cor, tamanho = tamanho };
+            TB_CAMISAS cm = new TB_CAMISAS() { descricao = descricaoCamisetas, preco = preco, cor = cor, tamanho = tamanho };
             CamisetasDBEntities contextCamisetas = new CamisetasDBEntities();
 
             string valor = Request.QueryString["idItem"];
 
             if (String.IsNullOrEmpty(valor))
             {
-                contextCamisetas.TB_CAMISAS.Add(camisetas);
+                contextCamisetas.TB_CAMISAS.Add(cm);
                 lblmsg.Text = "Registro Inserido!";
                 Clear();
             }
@@ -38,10 +38,10 @@ namespace VendaCamisetas
             {
                 int id = Convert.ToInt32(valor);
                 TB_CAMISAS camisas = contextCamisetas.TB_CAMISAS.First(c => c.id == id);
-                camisas.descricao = camisas.descricao;
-                camisas.preco = camisas.preco;
-                camisas.cor = camisas.cor;
-                camisas.tamanho = camisas.tamanho;
+                camisas.descricao = cm.descricao;
+                camisas.preco = cm.preco;
+                camisas.cor = cm.cor;
+                camisas.tamanho = cm.tamanho;
                 lblmsg.Text = "Registro Alterado";
             }
             contextCamisetas.SaveChanges();
