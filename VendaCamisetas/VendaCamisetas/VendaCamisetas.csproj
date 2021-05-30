@@ -98,6 +98,7 @@
     <Content Include="js\jquery-2.1.1.min.js" />
     <Content Include="js\jquery.validate.js" />
     <Content Include="js\script.js" />
+    <Content Include="Venda.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +141,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TB_CAMISAS.cs">
       <DependentUpon>Banco.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Venda.aspx.cs">
+      <DependentUpon>Venda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Venda.aspx.designer.cs">
+      <DependentUpon>Venda.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

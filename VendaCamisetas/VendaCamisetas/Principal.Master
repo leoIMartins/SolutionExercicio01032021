@@ -27,6 +27,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="Default.aspx">Principal</a></li>
                     <li><a href="Camisetas.aspx">Cadastro</a></li>
+                    <li><a href="Venda.aspx">Venda</a></li>
                 </ul>
             </div>
         </div>
