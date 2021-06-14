@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbcargosvagosModelStoreContainer" CdmEntityContainer="dbcargosvagosEntities">
+    <EntitySetMapping Name="TB_VAGAS_ORGAO">
+      <EntityTypeMapping TypeName="dbcargosvagosModel.TB_VAGAS_ORGAO">
+        <MappingFragment StoreEntitySet="TB_VAGAS_ORGAO">
+          <ScalarProperty Name="NOME_MES" ColumnName="NOME_MES" />
+          <ScalarProperty Name="ORGAO" ColumnName="ORGAO" />
+          <ScalarProperty Name="NOME_ORGAO" ColumnName="NOME_ORGAO" />
+          <ScalarProperty Name="SIGLA_ORGAO" ColumnName="SIGLA_ORGAO" />
+          <ScalarProperty Name="APROVADA" ColumnName="APROVADA" />
+          <ScalarProperty Name="DISTRIBUIDA" ColumnName="DISTRIBUIDA" />
+          <ScalarProperty Name="OCUPADA" ColumnName="OCUPADA" />
+          <ScalarProperty Name="VAGAS" ColumnName="VAGAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

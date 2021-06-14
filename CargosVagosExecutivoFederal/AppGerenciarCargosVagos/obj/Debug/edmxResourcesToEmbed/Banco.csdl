@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbcargosvagosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TB_VAGAS_ORGAO">
+    <Key>
+      <PropertyRef Name="ORGAO" />
+    </Key>
+    <Property Name="NOME_MES" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ORGAO" Type="Int32" Nullable="false" />
+    <Property Name="NOME_ORGAO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="SIGLA_ORGAO" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="APROVADA" Type="Int32" />
+    <Property Name="DISTRIBUIDA" Type="Int32" />
+    <Property Name="OCUPADA" Type="Int32" />
+    <Property Name="VAGAS" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="dbcargosvagosEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TB_VAGAS_ORGAO" EntityType="Self.TB_VAGAS_ORGAO" />
+  </EntityContainer>
+</Schema>
